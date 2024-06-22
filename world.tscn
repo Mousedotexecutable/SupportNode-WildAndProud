@@ -51,8 +51,9 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.184802, 0.184802, 0.184802, 1)
 
-[node name="player" parent="." instance=ExtResource("1_ca647")]
+[node name="player" parent="." node_paths=PackedStringArray("Tilemap") instance=ExtResource("1_ca647")]
 position = Vector2(172, 52)
+Tilemap = NodePath("../TileMap")
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -10
@@ -67,7 +68,7 @@ layer_1/tile_data = PackedInt32Array(196612, 0, 0, 196613, 0, 0, 262150, 0, 0, 3
 anchor_mode = 0
 
 [node name="PushableBox" parent="." instance=ExtResource("4_i5k7v")]
-position = Vector2(118, 76)
+position = Vector2(116, 76)
 
 [node name="Bush" parent="." instance=ExtResource("2_fpn5b")]
 position = Vector2(102, 76)
