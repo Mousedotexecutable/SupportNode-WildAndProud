@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b33ehuf03utst"]
+
+[ext_resource type="Script" path="res://objects/npc/npc.gd" id="1_3rvbx"]
+[ext_resource type="Texture2D" uid="uid://c2qloceqcrtu5" path="res://assets/Bird1.png" id="1_d31ms"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ofx7b"]
+radius = 3.0
+height = 10.0
+
+[node name="Npc" type="CharacterBody2D"]
+collision_layer = 0
+script = ExtResource("1_3rvbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_ofx7b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_d31ms")

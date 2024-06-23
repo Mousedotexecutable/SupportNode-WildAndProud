@@ -1,11 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dja02shtuwcir"]
 
 [ext_resource type="Script" path="res://objects/bush/Burn.gd" id="1_ykd1r"]
+[ext_resource type="Texture2D" uid="uid://c8g1vu13jjkgy" path="res://assets/Bush.png" id="2_sajjp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7n3f1"]
-size = Vector2(8, 8)
-
-[sub_resource type="QuadMesh" id="QuadMesh_na3wu"]
 size = Vector2(8, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5wxx"]
@@ -18,10 +16,8 @@ script = ExtResource("1_ykd1r")
 visible = false
 shape = SubResource("RectangleShape2D_7n3f1")
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-modulate = Color(0.439216, 0.67451, 0.592157, 1)
-z_index = -5
-mesh = SubResource("QuadMesh_na3wu")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_sajjp")
 
 [node name="Detection" type="Area2D" parent="."]
 
