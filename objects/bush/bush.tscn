@@ -7,10 +7,12 @@ size = Vector2(8, 8)
 size = Vector2(8, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5wxx"]
+size = Vector2(10, 10)
 
 [node name="Bush" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_7n3f1")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
@@ -21,4 +23,5 @@ mesh = SubResource("QuadMesh_na3wu")
 [node name="Detection" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection"]
+visible = false
 shape = SubResource("RectangleShape2D_m5wxx")

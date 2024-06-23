@@ -19,4 +19,5 @@ shape = SubResource("RectangleShape2D_w4y2e")
 mesh = SubResource("QuadMesh_slcg0")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
+visible = false
 collision_mask = 33

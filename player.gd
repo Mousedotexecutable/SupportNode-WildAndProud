@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 @export var Tilemap: TileMap
-@export var Root: Node2D
 
 func _physics_process(delta):
 	
@@ -12,6 +11,19 @@ func _physics_process(delta):
 	
 	move_and_slide()
 	
+	#When Raft is True disable mask 6 collision
+	#Check for Raft
+	if(Global.Raft):
+		#Tilemap data = null = Ground, Tilemap data != null = water
+		if(Tilemap.get_cell_tile_data(0, Tilemap.local_to_map(position)) != null):
+			if(not $RaftSprite.visible):
+				$RaftSprite.show()
+				$Sprite2D.hide()
+		else:
+			if($RaftSprite.visible):
+				$Sprite2D.show()
+				$RaftSprite.hide()
+			
 
 func _on_area_2d_body_entered(body):
 	print(body)
@@ -37,3 +49,4 @@ func _on_area_2d_body_entered(body):
 					body.Push("Right")
 					print(PlayerTile.x)
 					print(BoxTile.x)
+
