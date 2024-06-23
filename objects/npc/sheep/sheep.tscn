@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmotoop588w6i"]
+
+[ext_resource type="PackedScene" uid="uid://b33ehuf03utst" path="res://objects/npc/npc.tscn" id="1_3obae"]
+[ext_resource type="Texture2D" uid="uid://cdtkjdc33a760" path="res://assets/Sheep.png" id="2_p2nvn"]
+
+[node name="Npc" instance=ExtResource("1_3obae")]
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_p2nvn")
