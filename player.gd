@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var Tilemap: TileMap
+@export var MusicVolume: int
 
 @onready var BushSetOnFireSound = $SoundEffects/BushSetOnFire
 @onready var EnterWaterSound = $SoundEffects/EnterWater
@@ -8,12 +9,19 @@ extends CharacterBody2D
 @onready var PresentCollectSound = $SoundEffects/PresentCollect
 @onready var PushBlockSound = $SoundEffects/PushBlock
 
+@onready var MusicMelody = $Music/MusicMelody
+@onready var MusicBass = $Music/MusicBass
+@onready var MusicHarmony = $Music/MusicHarmony
+@onready var MusicPercussion = $Music/MusicPercussion
+
 var interaction_mode :bool = false
 var input_delay_timer :float = 0.0
 
 func _ready():
 	Global.textbox_finished.connect(_on_textbox_has_finished)
 	Global.enable_raft.connect(_on_raft_has_been_enabled)
+	
+	MusicMelody.volume_db = MusicVolume
 
 func _physics_process(delta):
 	match(interaction_mode):
@@ -34,6 +42,12 @@ func player_update(delta):
 	if input_dirrection.x != 0:
 		$Sprite2D.flip_h = true if input_dirrection.x > 0 else false
 	
+	if(Global.Glove and (MusicBass.volume_db == 0)):
+		MusicBass.volume_db = MusicVolume
+	if(Global.Fire and (MusicHarmony.volume_db == 0)):
+		MusicHarmony.volume_db = MusicVolume
+	if(Global.Raft and (MusicPercussion.volume_db == 0)):
+		MusicPercussion.volume_db = MusicVolume
 	move_and_slide()
 	
 	#When Raft is True disable mask 6 collision
