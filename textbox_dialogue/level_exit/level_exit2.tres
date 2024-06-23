@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://cek2ioxgw7fde"]
+
+[ext_resource type="Resource" uid="uid://c5ns1icod3ht4" path="res://textbox_dialogue/level_exit/level_exit3.tres" id="1_67m2r"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_ndp0y"]
+
+[resource]
+script = ExtResource("1_ndp0y")
+text = "you still need to give your"
+next_set = ExtResource("1_67m2r")

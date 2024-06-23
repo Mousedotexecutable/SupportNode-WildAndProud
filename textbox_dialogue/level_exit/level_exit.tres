@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://ub5eib8kv047"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_hcxai"]
+[ext_resource type="Resource" uid="uid://cek2ioxgw7fde" path="res://textbox_dialogue/level_exit/level_exit2.tres" id="1_imv7y"]
+
+[resource]
+script = ExtResource("1_hcxai")
+text = "You can't leave the islands yet"
+next_set = ExtResource("1_imv7y")

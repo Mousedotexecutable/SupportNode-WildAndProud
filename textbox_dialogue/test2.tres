@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://dc5oe6maumtwx"]
+
+[ext_resource type="Resource" uid="uid://bqnhjfjhc4yld" path="res://textbox_dialogue/test3.tres" id="1_6ovmu"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_yjpqv"]
+
+[resource]
+script = ExtResource("1_yjpqv")
+text = "Uhhhh, this is awkward."
+next_set = ExtResource("1_6ovmu")

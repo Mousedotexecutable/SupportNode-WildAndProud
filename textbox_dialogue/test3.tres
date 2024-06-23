@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://bqnhjfjhc4yld"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_nj56n"]
+[ext_resource type="Resource" uid="uid://1p5mv3d4k20j" path="res://textbox_dialogue/test4.tres" id="1_s7mps"]
+
+[resource]
+script = ExtResource("1_nj56n")
+text = "I don't know how to"
+next_set = ExtResource("1_s7mps")

@@ -13,6 +13,7 @@ size = Vector2(8, 8)
 size = Vector2(8, 9)
 
 [node name="player" type="CharacterBody2D"]
+collision_mask = 33
 motion_mode = 1
 script = ExtResource("1_t2s71")
 
