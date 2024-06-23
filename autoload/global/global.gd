@@ -9,6 +9,7 @@ signal enable_raft
 
 # variables and functions for the gifts
 var gift_ammount :int = 0
+var people_have_been_gifted
 
 func reset_gift_ammount():
 	gift_ammount = 0
