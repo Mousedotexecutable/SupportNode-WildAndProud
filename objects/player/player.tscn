@@ -1,7 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://5u47fow6im3i"]
+[gd_scene load_steps=11 format=3 uid="uid://5u47fow6im3i"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_t2s71"]
+[ext_resource type="AudioStream" uid="uid://bg6fydd44bl45" path="res://assets/sounds/BushSetOnFire.wav" id="2_46weh"]
 [ext_resource type="Texture2D" uid="uid://p3aou080ay8w" path="res://assets/Gay_Jam_sprite_player.png" id="2_nskbr"]
+[ext_resource type="AudioStream" uid="uid://gh220tpg7u57" path="res://assets/sounds/EnterWater.wav" id="3_yivuh"]
+[ext_resource type="AudioStream" uid="uid://bfbqbielnkfkr" path="res://assets/sounds/Interact.wav" id="4_h528q"]
+[ext_resource type="AudioStream" uid="uid://blojcrbuqphx0" path="res://assets/sounds/PresentCollect.wav" id="5_7d4ah"]
+[ext_resource type="AudioStream" uid="uid://v8yi6gwlogbw" path="res://assets/sounds/PushBlock.wav" id="6_u2yet"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ifrds"]
 size = Vector2(7.00002, 5.99997)
@@ -38,5 +43,29 @@ mesh = SubResource("QuadMesh_h3uw3")
 visible = false
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_xm0ww")
+
+[node name="SoundEffects" type="Node2D" parent="."]
+
+[node name="BushSetOnFire" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("2_46weh")
+volume_db = 24.0
+
+[node name="EnterWater" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("3_yivuh")
+volume_db = 24.0
+
+[node name="Interact" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("4_h528q")
+volume_db = 24.0
+
+[node name="PresentCollect" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("5_7d4ah")
+volume_db = 24.0
+
+[node name="PushBlock" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource("6_u2yet")
+volume_db = 24.0
+
+[node name="AudioListener2D" type="AudioListener2D" parent="SoundEffects"]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

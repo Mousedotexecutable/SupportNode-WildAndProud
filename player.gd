@@ -2,6 +2,12 @@ extends CharacterBody2D
 
 @export var Tilemap: TileMap
 
+@onready var BushSetOnFireSound = $SoundEffects/BushSetOnFire
+@onready var EnterWaterSound = $SoundEffects/EnterWater
+@onready var InteractSound = $SoundEffects/Interact
+@onready var PresentCollectSound = $SoundEffects/PresentCollect
+@onready var PushBlockSound = $SoundEffects/PushBlock
+
 var interaction_mode :bool = false
 var input_delay_timer :float = 0.0
 
@@ -36,10 +42,14 @@ func player_update(delta):
 		#Tilemap data = null = Ground, Tilemap data != null = water
 		if(Tilemap.get_cell_tile_data(0, Tilemap.local_to_map(position)) != null):
 			if(not $RaftSprite.visible):
+				print("playing")
+				EnterWaterSound.play()
 				$RaftSprite.show()
 				$Sprite2D.hide()
 		else:
 			if($RaftSprite.visible):
+				print("playing")
+				EnterWaterSound.play()
 				$Sprite2D.show()
 				$RaftSprite.hide()
 	
@@ -47,16 +57,16 @@ func player_update(delta):
 	
 	for i in $Area2D.get_overlapping_bodies():
 		if i.has_method("Burn"):
-			#print("True")
 			if(Global.Fire):
 				if Input.is_action_just_pressed("interact"):
+					BushSetOnFireSound.play()
 					i.Burn()
 	
 	for i in $Area2D.get_overlapping_areas():
 		if input_delay_timer < 0:
 			if i.has_method("friend_interact"):
 				if Input.is_action_just_pressed("interact"):
-					#print("Thing!")
+					InteractSound.play()
 					i.friend_interact()
 					interaction_mode = true
 					input_delay_timer = 0.2
@@ -65,11 +75,13 @@ func player_update(delta):
 						
 			elif i.has_method("level_exit_interact"):
 				if Input.is_action_just_pressed("interact"):
+					InteractSound.play()
 					i.level_exit_interact()
 					interaction_mode = true
 					input_delay_timer = 0.2
 				
 		if i.has_method("pickup_gift"):
+			PresentCollectSound.play()
 			i.pickup_gift()
 	
 	
@@ -82,13 +94,17 @@ func _on_area_2d_body_entered(body):
 			var BoxTile = Tilemap.map_to_local(Tilemap.local_to_map(body.position))
 			if(PlayerTile.x == BoxTile.x):
 				if(PlayerTile.y > BoxTile.y):
+					PushBlockSound.play()
 					body.Push("Up")
 				else:
+					PushBlockSound.play()
 					body.Push("Down")
 			elif(PlayerTile.y == BoxTile.y):
 				if(PlayerTile.x > BoxTile.x):
+					PushBlockSound.play()
 					body.Push("Left")
 				else:
+					PushBlockSound.play()
 					body.Push("Right")
 					
 func _on_textbox_has_finished():

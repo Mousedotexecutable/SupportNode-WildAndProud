@@ -477,10 +477,6 @@ theme_override_font_sizes/font_size = 10
 text = "You got an item!"
 autowrap_mode = 2
 
-[node name="player" parent="." node_paths=PackedStringArray("Tilemap") instance=ExtResource("1_44ohw")]
-position = Vector2(41, 121)
-Tilemap = NodePath("../TileMap")
-
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -10
 tile_set = SubResource("TileSet_j0vwt")
@@ -542,3 +538,7 @@ position = Vector2(60, 140)
 
 [node name="LevelExit" parent="." instance=ExtResource("13_d363o")]
 position = Vector2(79, 162)
+
+[node name="player" parent="." node_paths=PackedStringArray("Tilemap") instance=ExtResource("1_44ohw")]
+position = Vector2(49, 115)
+Tilemap = NodePath("../TileMap")
