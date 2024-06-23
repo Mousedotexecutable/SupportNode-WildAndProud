@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dja02shtuwcir"]
+[gd_scene load_steps=5 format=3 uid="uid://dja02shtuwcir"]
+
+[ext_resource type="Script" path="res://objects/bush/Burn.gd" id="1_ykd1r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7n3f1"]
 size = Vector2(8, 8)
@@ -10,6 +12,7 @@ size = Vector2(8, 8)
 size = Vector2(10, 10)
 
 [node name="Bush" type="StaticBody2D"]
+script = ExtResource("1_ykd1r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false

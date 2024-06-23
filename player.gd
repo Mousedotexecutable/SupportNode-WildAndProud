@@ -26,7 +26,6 @@ func _physics_process(delta):
 			
 
 func _on_area_2d_body_entered(body):
-	print(body)
 	if(body.has_method("Push")):
 		if(Global.Glove):
 			var PlayerTile = Tilemap.map_to_local(Tilemap.local_to_map(position))
@@ -34,19 +33,13 @@ func _on_area_2d_body_entered(body):
 			if(PlayerTile.x == BoxTile.x):
 				if(PlayerTile.y > BoxTile.y):
 					body.Push("Up")
-					print(PlayerTile.y)
-					print(BoxTile.y)
 				else:
 					body.Push("Down")
-					print(PlayerTile.y)
-					print(BoxTile.y)
 			elif(PlayerTile.y == BoxTile.y):
 				if(PlayerTile.x > BoxTile.x):
 					body.Push("Left")
-					print(PlayerTile.x)
-					print(BoxTile.x)
 				else:
 					body.Push("Right")
-					print(PlayerTile.x)
-					print(BoxTile.x)
-
+	elif(body.has_method("Burn")):
+		if(Global.Fire):
+			body.Burn()
