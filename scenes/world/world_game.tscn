@@ -511,6 +511,7 @@ offset_right = 115.0
 offset_bottom = 75.0
 theme_override_fonts/font = SubResource("FontVariation_vln0t")
 theme_override_font_sizes/font_size = 10
+text = "You got an item!"
 autowrap_mode = 2
 
 [node name="TileMap" type="TileMap" parent="."]
