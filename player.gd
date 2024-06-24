@@ -59,12 +59,10 @@ func player_update(delta):
 				print("playing")
 				EnterWaterSound.play()
 				$RaftSprite.show()
-				$Sprite2D.hide()
 		else:
 			if($RaftSprite.visible):
 				print("playing")
 				EnterWaterSound.play()
-				$Sprite2D.show()
 				$RaftSprite.hide()
 	
 	# Sorry for the mess, but I had to make the game feel responsive and this was the only the player would have never been able to use the interact button properly.
