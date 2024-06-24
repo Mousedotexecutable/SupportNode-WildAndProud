@@ -795,8 +795,7 @@ position = Vector2(268, -60)
 position = Vector2(428, -156)
 
 [node name="LevelExit" parent="." instance=ExtResource("13_d363o")]
-position = Vector2(599, -8)
-rotation = 1.5708
+position = Vector2(588, -8)
 
 [node name="player" parent="." node_paths=PackedStringArray("Tilemap") instance=ExtResource("1_44ohw")]
 position = Vector2(52, 115)
