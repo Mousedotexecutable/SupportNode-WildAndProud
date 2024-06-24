@@ -42,8 +42,8 @@ func player_update(delta):
 	if input_dirrection.x != 0:
 		$Sprite2D.flip_h = true if input_dirrection.x > 0 else false
 	
-	if(Global.Glove and (MusicBass.volume_db == 0)):
-		MusicBass.volume_db = MusicVolume
+	if(Global.Glove and (MusicMelody.volume_db == 0)):
+		MusicMelody.volume_db = MusicVolume
 	if(Global.Fire and (MusicHarmony.volume_db == 0)):
 		MusicHarmony.volume_db = MusicVolume
 	if(Global.Raft and (MusicPercussion.volume_db == 0)):
