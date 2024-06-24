@@ -14,7 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://dew6dyvs3bvta" path="res://assets/Music/PrideGameThemePercusion.mp3" id="12_adgeo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ifrds"]
-size = Vector2(7.00002, 5.99997)
+size = Vector2(7, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xm0ww"]
 size = Vector2(8, 9)
@@ -26,8 +26,7 @@ script = ExtResource("1_t2s71")
 MusicVolume = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0, 0.5)
+position = Vector2(-1.72853e-06, 0.5)
 rotation = -1.5708
 shape = SubResource("RectangleShape2D_ifrds")
 

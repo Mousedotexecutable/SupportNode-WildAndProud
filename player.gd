@@ -21,7 +21,7 @@ func _ready():
 	Global.textbox_finished.connect(_on_textbox_has_finished)
 	Global.enable_raft.connect(_on_raft_has_been_enabled)
 	
-	MusicMelody.volume_db = MusicVolume
+	MusicBass.volume_db = MusicVolume
 
 func _physics_process(delta):
 	match(interaction_mode):
@@ -42,11 +42,11 @@ func player_update(delta):
 	if input_dirrection.x != 0:
 		$Sprite2D.flip_h = true if input_dirrection.x > 0 else false
 	
-	if(Global.Glove and (MusicMelody.volume_db == 0)):
+	if(Global.Glove and (MusicMelody.volume_db < 0)):
 		MusicMelody.volume_db = MusicVolume
-	if(Global.Fire and (MusicHarmony.volume_db == 0)):
+	if(Global.Fire and (MusicHarmony.volume_db < 0)):
 		MusicHarmony.volume_db = MusicVolume
-	if(Global.Raft and (MusicPercussion.volume_db == 0)):
+	if(Global.Raft and (MusicPercussion.volume_db < 0)):
 		MusicPercussion.volume_db = MusicVolume
 	move_and_slide()
 	
