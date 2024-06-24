@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+# Comment just so git can see the godamn changes!
+
 @onready var origin_position :Vector2 = position
 
 enum {pause, walking}
