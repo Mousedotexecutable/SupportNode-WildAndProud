@@ -5,5 +5,5 @@
 
 [resource]
 script = ExtResource("1_wojlt")
-text = "Oi, Char! How have you been? "
+text = "Oi, Char! How have you"
 next_set = ExtResource("1_4cgic")
