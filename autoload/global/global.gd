@@ -9,10 +9,11 @@ signal enable_raft
 
 # variables and functions for the gifts
 var gift_ammount :int = 0
-var people_have_been_gifted
+var people_have_been_gifted :int = 0
 
 func reset_gift_ammount():
 	gift_ammount = 0
+	people_have_been_gifted = 0
 
 # textbox stuff
 signal set_textbox( textbox_data:TextboxData )

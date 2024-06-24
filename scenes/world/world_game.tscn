@@ -1,9 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://bx0y2ebgx6nn"]
+[gd_scene load_steps=28 format=3 uid="uid://bx0y2ebgx6nn"]
 
 [ext_resource type="PackedScene" uid="uid://5u47fow6im3i" path="res://objects/player/player.tscn" id="1_44ohw"]
 [ext_resource type="Script" path="res://scenes/world/world_game.gd" id="1_tff6q"]
 [ext_resource type="Script" path="res://scenes/world/textbox.gd" id="2_63j8f"]
 [ext_resource type="Texture2D" uid="uid://dwiox4smjccrx" path="res://assets/Gay_Jam_sprite_finished_art.png" id="3_kxr23"]
+[ext_resource type="Texture2D" uid="uid://dq81b31ma28dn" path="res://assets/Button_Gui.png" id="3_t5fqt"]
 [ext_resource type="FontFile" uid="uid://xnepc1fixgdf" path="res://assets/font/NotJamPixel5.ttf" id="3_tc76x"]
 [ext_resource type="Script" path="res://objects/camera/game_camera.gd" id="4_r174r"]
 [ext_resource type="PackedScene" uid="uid://c7r5llwvkxxw3" path="res://objects/pushable_box/pushable_box.tscn" id="5_livbo"]
@@ -13,6 +14,33 @@
 [ext_resource type="PackedScene" uid="uid://26oiyylp7qo4" path="res://objects/gift/gift.tscn" id="10_ydxab"]
 [ext_resource type="Resource" uid="uid://d3btm64imba8m" path="res://textbox_dialogue/friend1/zero_gifts.tres" id="12_oad6o"]
 [ext_resource type="PackedScene" uid="uid://dq6oiuxr5pj2v" path="res://objects/level_exit/level_exit.tscn" id="13_d363o"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v0exy"]
+texture = ExtResource("3_t5fqt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q0qgf"]
+texture = ExtResource("3_t5fqt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bbh7u"]
+texture = ExtResource("3_t5fqt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ma1it"]
+texture = ExtResource("3_t5fqt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7n6ts"]
+texture = ExtResource("3_t5fqt")
+texture_margin_left = 11.0
+texture_margin_top = 11.0
+texture_margin_right = 11.0
+texture_margin_bottom = 11.0
+
+[sub_resource type="Theme" id="Theme_v6364"]
+default_font = ExtResource("3_tc76x")
+Button/styles/focus = SubResource("StyleBoxTexture_v0exy")
+Button/styles/hover = SubResource("StyleBoxTexture_q0qgf")
+Button/styles/normal = SubResource("StyleBoxTexture_bbh7u")
+Button/styles/pressed = SubResource("StyleBoxTexture_ma1it")
+Panel/styles/panel = SubResource("StyleBoxTexture_7n6ts")
 
 [sub_resource type="FontVariation" id="FontVariation_vln0t"]
 base_font = ExtResource("3_tc76x")
@@ -467,15 +495,14 @@ script = ExtResource("1_tff6q")
 
 [node name="Textbox" type="CanvasLayer" parent="."]
 layer = 10
-visible = false
 script = ExtResource("2_63j8f")
 
-[node name="ColorRect" type="ColorRect" parent="Textbox"]
-offset_left = 4.0
-offset_top = 52.0
-offset_right = 116.0
-offset_bottom = 76.0
-color = Color(0.312869, 0.312869, 0.312869, 1)
+[node name="ColorRect" type="Panel" parent="Textbox"]
+offset_left = 3.0
+offset_top = 51.0
+offset_right = 117.0
+offset_bottom = 77.0
+theme = SubResource("Theme_v6364")
 
 [node name="Label" type="Label" parent="Textbox"]
 offset_left = 5.0
