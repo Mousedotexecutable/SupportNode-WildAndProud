@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://y0xgcsnalgql"]
+
+[ext_resource type="FontFile" uid="uid://xnepc1fixgdf" path="res://assets/font/NotJamPixel5.ttf" id="1_kxrbp"]
+[ext_resource type="Texture2D" uid="uid://dq81b31ma28dn" path="res://assets/Button_Gui.png" id="1_po6y6"]
+[ext_resource type="Script" path="res://scenes/menu/Menu.gd" id="2_4qkvs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v0exy"]
+texture = ExtResource("1_po6y6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q0qgf"]
+texture = ExtResource("1_po6y6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bbh7u"]
+texture = ExtResource("1_po6y6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ma1it"]
+texture = ExtResource("1_po6y6")
+
+[sub_resource type="Theme" id="Theme_0vo2m"]
+default_font = ExtResource("1_kxrbp")
+Button/styles/focus = SubResource("StyleBoxTexture_v0exy")
+Button/styles/hover = SubResource("StyleBoxTexture_q0qgf")
+Button/styles/normal = SubResource("StyleBoxTexture_bbh7u")
+Button/styles/pressed = SubResource("StyleBoxTexture_ma1it")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_0vo2m")
+script = ExtResource("2_4qkvs")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 35.0
+offset_right = 188.0
+offset_bottom = 60.0
+text = "Gift finder"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 71.0
+offset_right = 197.0
+offset_bottom = 96.0
+text = "Start game"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 102.0
+offset_right = 197.0
+offset_bottom = 127.0
+text = "Exit game"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

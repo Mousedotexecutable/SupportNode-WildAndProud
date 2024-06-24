@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://26oiyylp7qo4"]
 
-[ext_resource type="Texture2D" uid="uid://p3aou080ay8w" path="res://assets/Gay_Jam_sprite_player.png" id="1_7t6qw"]
 [ext_resource type="Script" path="res://objects/gift/gift.gd" id="1_fpvya"]
+[ext_resource type="Texture2D" uid="uid://wu7tkxi1aewj" path="res://assets/Gift.png" id="2_7yjl3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yu2gt"]
+size = Vector2(8, 8)
 
 [node name="Gift" type="Area2D"]
 script = ExtResource("1_fpvya")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.950403, 0.138272, 0.500381, 1)
-texture = ExtResource("1_7t6qw")
+texture = ExtResource("2_7yjl3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_yu2gt")
