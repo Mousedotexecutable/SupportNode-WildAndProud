@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://cqt2xjr1g2gb3"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_iibho"]
+[ext_resource type="Resource" uid="uid://cbp6uiql3y2fa" path="res://textbox_dialogue/friend2/gifted/gifted_fr2_1.tres" id="1_xgslt"]
+
+[resource]
+script = ExtResource("1_iibho")
+text = "A gift? Only Sprite2d has"
+next_set = ExtResource("1_xgslt")

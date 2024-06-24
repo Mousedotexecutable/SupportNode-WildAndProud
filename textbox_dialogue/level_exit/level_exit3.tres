@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://c5ns1icod3ht4"]
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://c5ns1icod3ht4"]
 
 [ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_ihxau"]
+[ext_resource type="Resource" uid="uid://57f010rmv61u" path="res://textbox_dialogue/level_exit/level_exit4.tres" id="1_sonkv"]
 
 [resource]
 script = ExtResource("1_ihxau")
-text = "friends gifts."
+text = "will only open if the joy"
+next_set = ExtResource("1_sonkv")

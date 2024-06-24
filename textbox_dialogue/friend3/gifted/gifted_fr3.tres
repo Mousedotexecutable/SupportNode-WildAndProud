@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://ddknqf5223thk"]
+
+[ext_resource type="Resource" uid="uid://cb80cfrqc7irl" path="res://textbox_dialogue/friend3/gifted/gifted_fr3_1.tres" id="1_iug2q"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_ptu6x"]
+
+[resource]
+script = ExtResource("1_ptu6x")
+text = "A present? You shouldn't"
+next_set = ExtResource("1_iug2q")

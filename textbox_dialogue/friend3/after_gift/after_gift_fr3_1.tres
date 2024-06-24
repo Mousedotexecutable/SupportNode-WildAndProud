@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://b7uinmk6f5xom"]
+
+[ext_resource type="Resource" uid="uid://c3cps043g2aep" path="res://textbox_dialogue/friend3/after_gift/after_gift_fr3_2.tres" id="1_hr22k"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="2_32sh2"]
+
+[resource]
+script = ExtResource("2_32sh2")
+text = "give Sprite2D his book back"
+next_set = ExtResource("1_hr22k")

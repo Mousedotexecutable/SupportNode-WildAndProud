@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://cdyklh24jxl64"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_e6gbn"]
+
+[resource]
+script = ExtResource("1_e6gbn")
+text = "yesterday? Well here it is!"

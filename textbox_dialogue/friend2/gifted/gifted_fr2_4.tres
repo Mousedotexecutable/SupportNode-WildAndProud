@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://ydpua75a7kmd"]
+
+[ext_resource type="Resource" uid="uid://8q2fkockvbj0" path="res://textbox_dialogue/friend2/gifted/gifted_fr2_5.tres" id="1_0yhd6"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_wg2eb"]
+
+[resource]
+script = ExtResource("1_wg2eb")
+text = "well, here take my super"
+next_set = ExtResource("1_0yhd6")

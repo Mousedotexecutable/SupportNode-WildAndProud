@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://den1lyxygn06m"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_chayl"]
+[ext_resource type="Resource" uid="uid://dqhc4mrd3mxdg" path="res://textbox_dialogue/friend1/default/defualt_fr1_3.tres" id="1_gvr2m"]
+
+[resource]
+script = ExtResource("1_chayl")
+text = "I'm so glad that you're"
+next_set = ExtResource("1_gvr2m")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://cb80cfrqc7irl"]
+
+[ext_resource type="Resource" uid="uid://cgly1tmlowjh5" path="res://textbox_dialogue/friend3/gifted/gifted_fr3_2.tres" id="1_226t8"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_oskou"]
+
+[resource]
+script = ExtResource("1_oskou")
+text = "have, you're too kind! Oh,"
+next_set = ExtResource("1_226t8")

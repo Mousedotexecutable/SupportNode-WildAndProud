@@ -5,5 +5,5 @@
 
 [resource]
 script = ExtResource("1_ndp0y")
-text = "you still need to give your"
+text = "islands yet. The exit"
 next_set = ExtResource("1_67m2r")

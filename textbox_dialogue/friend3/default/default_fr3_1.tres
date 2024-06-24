@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://bvjtf3ofec4y1"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_bwngn"]
+[ext_resource type="Resource" uid="uid://7vtboo6eqw4k" path="res://textbox_dialogue/friend3/default/default_fr3_2.tres" id="1_owq40"]
+
+[resource]
+script = ExtResource("1_bwngn")
+text = "to see both Sprite2d and"
+next_set = ExtResource("1_owq40")

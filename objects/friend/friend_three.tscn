@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8vlru41xm26m"]
+[gd_scene load_steps=6 format=3 uid="uid://c8vlru41xm26m"]
 
 [ext_resource type="PackedScene" uid="uid://bbu3fyhp8nwn6" path="res://objects/friend/base_friend.tscn" id="1_5u21l"]
+[ext_resource type="Resource" uid="uid://ddknqf5223thk" path="res://textbox_dialogue/friend3/gifted/gifted_fr3.tres" id="2_1bsfu"]
 [ext_resource type="Texture2D" uid="uid://degp4ag5qxci" path="res://assets/CharacterBody.png" id="2_u5r3s"]
+[ext_resource type="Resource" uid="uid://saj7wcy04rj1" path="res://textbox_dialogue/friend3/default/default_fr3.tres" id="3_lqpkr"]
+[ext_resource type="Resource" uid="uid://crbgt53bo3wr3" path="res://textbox_dialogue/friend3/after_gift/after_gift_fr3.tres" id="4_0h2jm"]
 
 [node name="BaseFriend" instance=ExtResource("1_5u21l")]
 unlock_options = 2
+reciving_gift_dialouge = ExtResource("2_1bsfu")
+default_dialouge = ExtResource("3_lqpkr")
+after_reciving_gift_dialouge = ExtResource("4_0h2jm")
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_u5r3s")

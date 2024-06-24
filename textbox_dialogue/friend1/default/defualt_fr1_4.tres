@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://j6nwtdyf0k82"]
+
+[ext_resource type="Resource" uid="uid://cgu7n1okcrdhp" path="res://textbox_dialogue/friend1/default/defualt_fr1_5.tres" id="1_fvjsc"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_kt1ye"]
+
+[resource]
+script = ExtResource("1_kt1ye")
+text = "darling MeshInstance"
+next_set = ExtResource("1_fvjsc")

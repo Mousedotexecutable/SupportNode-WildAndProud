@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://td5pv1g1ddww"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_8fxoh"]
+[ext_resource type="Resource" uid="uid://k1wragbfusq7" path="res://textbox_dialogue/friend1/after_gift/after_gift_fr1_3.tres" id="1_kqj2p"]
+
+[resource]
+script = ExtResource("1_8fxoh")
+text = "He tends to get lost very"
+next_set = ExtResource("1_kqj2p")

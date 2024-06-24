@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://cjr7hhgt7namy"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_7trgv"]
+
+[resource]
+script = ExtResource("1_7trgv")
+text = "somewhere."
