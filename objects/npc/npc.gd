@@ -7,7 +7,7 @@ enum {pause, walking}
 var walking_timer :float = 2.0
 var pause_timer :float = 0.0
 
-var time :float = 0.0
+var time :float = 1.0
 
 #var 
 var current_state :int = 0
