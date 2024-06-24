@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://co60y5jex1hg0"]
+
+[ext_resource type="PackedScene" uid="uid://c7r5llwvkxxw3" path="res://objects/pushable_box/pushable_box.tscn" id="1_fkmwf"]
+[ext_resource type="Texture2D" uid="uid://duly5f2bwmfk6" path="res://assets/Rock.png" id="2_tvegv"]
+
+[node name="PushableBox" instance=ExtResource("1_fkmwf")]
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_tvegv")
