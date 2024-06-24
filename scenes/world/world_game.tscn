@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bx0y2ebgx6nn"]
+[gd_scene load_steps=29 format=3 uid="uid://bx0y2ebgx6nn"]
 
 [ext_resource type="PackedScene" uid="uid://5u47fow6im3i" path="res://objects/player/player.tscn" id="1_44ohw"]
 [ext_resource type="Script" path="res://scenes/world/world_game.gd" id="1_tff6q"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://26oiyylp7qo4" path="res://objects/gift/gift.tscn" id="10_ydxab"]
 [ext_resource type="Resource" uid="uid://d3btm64imba8m" path="res://textbox_dialogue/friend1/zero_gifts.tres" id="12_oad6o"]
 [ext_resource type="PackedScene" uid="uid://dq6oiuxr5pj2v" path="res://objects/level_exit/level_exit.tscn" id="13_d363o"]
+[ext_resource type="PackedScene" uid="uid://co60y5jex1hg0" path="res://objects/pushable_box/pushable_rock.tscn" id="15_1qjkj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v0exy"]
 texture = ExtResource("3_t5fqt")
@@ -713,7 +714,6 @@ position = Vector2(84, 116)
 
 [node name="Bush" parent="." instance=ExtResource("6_dcfk1")]
 position = Vector2(68, 116)
-rotation = -1.5708
 
 [node name="DockThatLetsThePlayerMoveOverWaterWithARaft" parent="." instance=ExtResource("7_aeuvv")]
 position = Vector2(-36, 68)
@@ -750,3 +750,6 @@ position = Vector2(79, 162)
 [node name="player" parent="." node_paths=PackedStringArray("Tilemap") instance=ExtResource("1_44ohw")]
 position = Vector2(49, 115)
 Tilemap = NodePath("../TileMap")
+
+[node name="PushableBox2" parent="." instance=ExtResource("15_1qjkj")]
+position = Vector2(76, 108)
