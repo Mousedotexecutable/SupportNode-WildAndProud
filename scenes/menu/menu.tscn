@@ -35,11 +35,11 @@ script = ExtResource("2_4qkvs")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 60.0
-offset_top = 35.0
-offset_right = 188.0
-offset_bottom = 60.0
-text = "Gift finder"
+offset_left = 46.0
+offset_top = 32.0
+offset_right = 190.0
+offset_bottom = 57.0
+text = "Node Support"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
