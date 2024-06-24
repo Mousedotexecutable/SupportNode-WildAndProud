@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://u5hlts7qrwtx"]
+
+[ext_resource type="PackedScene" uid="uid://bbu3fyhp8nwn6" path="res://objects/friend/base_friend.tscn" id="1_mbuft"]
+[ext_resource type="Texture2D" uid="uid://bplt4auet5btx" path="res://assets/Quad.png" id="2_1vrlb"]
+
+[node name="BaseFriend" instance=ExtResource("1_mbuft")]
+unlock_options = 0
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_1vrlb")
