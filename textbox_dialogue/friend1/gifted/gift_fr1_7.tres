@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://3m0big8a3y1k"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_xgub5"]
+
+[resource]
+script = ExtResource("1_xgub5")
+text = "think it's the pride flag."

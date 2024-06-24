@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://14evbx2o0x2d"]
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://14evbx2o0x2d"]
 
+[ext_resource type="Resource" uid="uid://dbh4mssh0f5v4" path="res://textbox_dialogue/friend1/gifted/gift_fr1_2.tres" id="1_4jeof"]
 [ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_b0loa"]
 
 [resource]
 script = ExtResource("1_b0loa")
-text = "empty"
+text = "Hmm, a gift for me?"
+next_set = ExtResource("1_4jeof")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://bfh4t1xiwlwaj"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_2gw8e"]
+[ext_resource type="Resource" uid="uid://dddtpin8yggpf" path="res://textbox_dialogue/friend2/gifted/gifted_fr2_7.tres" id="1_wuffi"]
+
+[resource]
+script = ExtResource("1_2gw8e")
+text = "rocks."
+next_set = ExtResource("1_wuffi")

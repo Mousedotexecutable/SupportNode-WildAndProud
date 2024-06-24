@@ -50,23 +50,23 @@ shape = SubResource("RectangleShape2D_xm0ww")
 
 [node name="BushSetOnFire" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("2_46weh")
-volume_db = 24.0
+volume_db = 1.0
 
 [node name="EnterWater" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("3_yivuh")
-volume_db = 24.0
+volume_db = 1.0
 
 [node name="Interact" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("4_h528q")
-volume_db = 24.0
+volume_db = 1.0
 
 [node name="PresentCollect" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("5_7d4ah")
-volume_db = 24.0
+volume_db = 1.0
 
 [node name="PushBlock" type="AudioStreamPlayer" parent="SoundEffects"]
 stream = ExtResource("6_u2yet")
-volume_db = 24.0
+volume_db = 1.0
 
 [node name="AudioListener2D" type="AudioListener2D" parent="SoundEffects"]
 

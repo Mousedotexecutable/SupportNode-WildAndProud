@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://dbh4mssh0f5v4"]
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://dbh4mssh0f5v4"]
 
 [ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_4rbhq"]
+[ext_resource type="Resource" uid="uid://xt4yjvfnywf4" path="res://textbox_dialogue/friend1/gifted/gift_fr1_3.tres" id="1_56deb"]
 
 [resource]
 script = ExtResource("1_4rbhq")
 text = "Thank you so much! I also"
+next_set = ExtResource("1_56deb")
