@@ -42,8 +42,8 @@ func player_update(delta):
 	if input_dirrection.x != 0:
 		$Sprite2D.flip_h = true if input_dirrection.x > 0 else false
 	
-	if(Global.Glove and (MusicBass.volume_db == 0)):
-		MusicBass.volume_db = MusicVolume
+	if(Global.Glove and (MusicMelody.volume_db == 0)):
+		MusicMelody.volume_db = MusicVolume
 	if(Global.Fire and (MusicHarmony.volume_db == 0)):
 		MusicHarmony.volume_db = MusicVolume
 	if(Global.Raft and (MusicPercussion.volume_db == 0)):
@@ -59,12 +59,10 @@ func player_update(delta):
 				print("playing")
 				EnterWaterSound.play()
 				$RaftSprite.show()
-				$Sprite2D.hide()
 		else:
 			if($RaftSprite.visible):
 				print("playing")
 				EnterWaterSound.play()
-				$Sprite2D.show()
 				$RaftSprite.hide()
 	
 	# Sorry for the mess, but I had to make the game feel responsive and this was the only the player would have never been able to use the interact button properly.
