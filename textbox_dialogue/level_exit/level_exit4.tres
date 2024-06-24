@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://57f010rmv61u"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_87eh7"]
+[ext_resource type="Resource" uid="uid://cci3wpajrgxxd" path="res://textbox_dialogue/level_exit/level_exit5.tres" id="1_vdtuf"]
+
+[resource]
+script = ExtResource("1_87eh7")
+text = "of the people on this island"
+next_set = ExtResource("1_vdtuf")

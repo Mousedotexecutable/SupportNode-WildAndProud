@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://8q2fkockvbj0"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_a5rto"]
+
+[resource]
+script = ExtResource("1_a5rto")
+text = "gloves!"

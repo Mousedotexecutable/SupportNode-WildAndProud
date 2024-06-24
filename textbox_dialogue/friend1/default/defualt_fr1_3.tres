@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://dqhc4mrd3mxdg"]
+
+[ext_resource type="Resource" uid="uid://j6nwtdyf0k82" path="res://textbox_dialogue/friend1/default/defualt_fr1_4.tres" id="1_dhtp6"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_nqcyb"]
+
+[resource]
+script = ExtResource("1_nqcyb")
+text = "doing well! I hope my"
+next_set = ExtResource("1_dhtp6")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://c42inwxqivwu3"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_mbcwk"]
+[ext_resource type="Resource" uid="uid://ba6wbv0lp4opr" path="res://textbox_dialogue/friend3/gifted/gifted_fr3_4.tres" id="1_u3o61"]
+
+[resource]
+script = ExtResource("1_mbcwk")
+text = "remember the shear that I"
+next_set = ExtResource("1_u3o61")

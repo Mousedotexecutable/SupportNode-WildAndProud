@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://bpw0d27cd2dg2"]
+
+[ext_resource type="Resource" uid="uid://td5pv1g1ddww" path="res://textbox_dialogue/friend1/after_gift/after_gift_fr1_2.tres" id="1_2023a"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_kohe6"]
+
+[resource]
+script = ExtResource("1_kohe6")
+text = "Have you seen MeshInstance? "
+next_set = ExtResource("1_2023a")

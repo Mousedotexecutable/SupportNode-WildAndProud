@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://ba6wbv0lp4opr"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_jm3dx"]
+[ext_resource type="Resource" uid="uid://cdyklh24jxl64" path="res://textbox_dialogue/friend3/gifted/gifted_fr3_5.tres" id="1_l2g63"]
+
+[resource]
+script = ExtResource("1_jm3dx")
+text = "borrowed from you"
+next_set = ExtResource("1_l2g63")

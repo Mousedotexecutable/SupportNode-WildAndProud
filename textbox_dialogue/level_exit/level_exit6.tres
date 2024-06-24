@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://te3rf30bj5nn"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_7lvej"]
+[ext_resource type="Resource" uid="uid://d2v6mo6v6u51n" path="res://textbox_dialogue/level_exit/level_exit7.tres" id="1_qj4k5"]
+
+[resource]
+script = ExtResource("1_7lvej")
+text = "The quickest method is to"
+next_set = ExtResource("1_qj4k5")

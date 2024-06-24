@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://bjrv6kw6gsly"]
+
+[ext_resource type="Resource" uid="uid://cjr7hhgt7namy" path="res://textbox_dialogue/friend3/default/default_fr3_4.tres" id="1_3uryc"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_wtddw"]
+
+[resource]
+script = ExtResource("1_wtddw")
+text = "that they may have been lost"
+next_set = ExtResource("1_3uryc")

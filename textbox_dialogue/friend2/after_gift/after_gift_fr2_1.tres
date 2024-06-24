@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://cd04e3wle1wv0"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_nhjfx"]
+[ext_resource type="Resource" uid="uid://b6d6y2cquu36o" path="res://textbox_dialogue/friend2/after_gift/after_gift_fr2_2.tres" id="1_ot82e"]
+
+[resource]
+script = ExtResource("1_nhjfx")
+text = "always buy a new pair of"
+next_set = ExtResource("1_ot82e")

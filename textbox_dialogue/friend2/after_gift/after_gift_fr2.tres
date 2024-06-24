@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://sga82a4wbujw"]
+
+[ext_resource type="Resource" uid="uid://cd04e3wle1wv0" path="res://textbox_dialogue/friend2/after_gift/after_gift_fr2_1.tres" id="1_aemij"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_v5ska"]
+
+[resource]
+script = ExtResource("1_v5ska")
+text = "Oh, don't worry. I can"
+next_set = ExtResource("1_aemij")

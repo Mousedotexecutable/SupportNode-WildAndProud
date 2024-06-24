@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://tfl7g6fpuoad"]
+
+[ext_resource type="Resource" uid="uid://dn58r6dtwnd70" path="res://textbox_dialogue/friend2/default/default_fr2_1.tres" id="1_4cgic"]
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_wojlt"]
+
+[resource]
+script = ExtResource("1_wojlt")
+text = "Oi, Char! How have you been? "
+next_set = ExtResource("1_4cgic")

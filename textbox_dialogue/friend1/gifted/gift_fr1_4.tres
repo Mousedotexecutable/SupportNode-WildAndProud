@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=2 format=3 uid="uid://dps6f8em20wmc"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_322pk"]
+
+[resource]
+script = ExtResource("1_322pk")
+text = "take this raft"

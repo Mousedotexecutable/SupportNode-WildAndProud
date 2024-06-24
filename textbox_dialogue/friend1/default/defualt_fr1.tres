@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TextboxData" load_steps=3 format=3 uid="uid://ctmsr3e8onayd"]
+
+[ext_resource type="Script" path="res://scenes/world/textbox_data.gd" id="1_q8bv0"]
+[ext_resource type="Resource" uid="uid://den1lyxygn06m" path="res://textbox_dialogue/friend1/default/defualt_fr1_2.tres" id="1_vury1"]
+
+[resource]
+script = ExtResource("1_q8bv0")
+text = "Sup Charbody2d,"
+next_set = ExtResource("1_vury1")
