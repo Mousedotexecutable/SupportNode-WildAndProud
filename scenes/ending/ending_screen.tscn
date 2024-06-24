@@ -57,7 +57,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_tldvd")
-text = "And so, Charbody2d has gifted all of their friends and they all left the island.
+text = "And so, Charbody2d has gifted all of their friends and they all left the level.
 
 Happy LGBT month!"
 autowrap_mode = 2

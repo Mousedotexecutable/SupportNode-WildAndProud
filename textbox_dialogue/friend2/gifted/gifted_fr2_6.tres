@@ -5,5 +5,5 @@
 
 [resource]
 script = ExtResource("1_2gw8e")
-text = "rocks."
+text = "push boxes and"
 next_set = ExtResource("1_wuffi")
